@@ -40,22 +40,17 @@
             <h1 class="ps-center">Nuestro Menu</h1>
             <br />
             <% listaPlatos.forEach(plato=> { %>
-            <% listaPlatos.forEach(plato=> { %>
-
-              <h4><%= plato.titulo %></h4>
-              <%=  %>
               <h4><%= plato.titulo %></h4>
               <p class="ps-text-grey">
-                <%= plato.descripcionCorta %> <%= plato.precio %>
                 <%= plato.descripcionCorta %> U$S <%= plato.precio %>
               </p>
               <br />
-              <% }) %>
           </div>
 
           <div class="ps-col l6 ps-padding-large ps-img-menu">
-            <img src="/images/<%= plato.img%>" class="ps-round ps-image ps-opacity-min" alt="Menu" />
+            <img src="/images/<%= plato.img %>" class="ps-round ps-image ps-opacity-min" alt="Menu" />
           </div>
+          <% }) %>
         </div>
 
         <!-- Footer -->
