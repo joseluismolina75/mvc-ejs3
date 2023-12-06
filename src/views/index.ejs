@@ -40,9 +40,13 @@
             <h1 class="ps-center">Nuestro Menu</h1>
             <br />
             <% listaPlatos.forEach(plato=> { %>
+            <% listaPlatos.forEach(plato=> { %>
 
               <h4><%= plato.titulo %></h4>
+              <%=  %>
+              <h4><%= plato.titulo %></h4>
               <p class="ps-text-grey">
+                <%= plato.descripcionCorta %> <%= plato.precio %>
                 <%= plato.descripcionCorta %> U$S <%= plato.precio %>
               </p>
               <br />
